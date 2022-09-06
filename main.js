@@ -1,5 +1,7 @@
+//Accessing NodeJS network API
 const net = require("net");
 
+//Initialize TCP stream based socket connection
 const server = net.createServer((connection) => {
   // Add event handler for data event, then respond with PONG
   connection.on("data", () => {
